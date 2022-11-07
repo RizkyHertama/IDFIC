@@ -11,12 +11,13 @@ function navMenu(){
             navBar.classList.remove("navbar-sticky-moved-up");
         }
         // apply transition
+        // ! SIMPLE PATCHED
         if (scroll >= 250) {
             navBar.classList.add("navbar-sticky-transitioned");
-            scrollTopButton.classList.add('scrollActive');
+            if(scrollTopButton) scrollTopButton.classList.add('scrollActive');
         } else {
             navBar.classList.remove("navbar-sticky-transitioned");
-            scrollTopButton.classList.remove('scrollActive');
+            if(scrollTopButton) scrollTopButton.classList.remove('scrollActive');
         }
         // sticky on
         if (scroll >= 500) {
@@ -32,6 +33,7 @@ navMenu();
 document.addEventListener("DOMContentLoaded", () => {
     function counter(id, start, end, duration){
         let obj = document.getElementById(id);
+        // ! SIMPLE PATCHED
         if(!obj) return;
 
         let current = start,
@@ -53,6 +55,8 @@ document.addEventListener("DOMContentLoaded", () => {
  });
 
  // APP-SCREEN
+ // ! SIMPLE PATCHED
+ if(typeof Swiper == 'undefined') Swiper = function(){};
  var swiper = new Swiper( '.swiper-container.app-screen', {
     effect: 'coverflow',
     loop: true,
@@ -87,3 +91,23 @@ navBar.forEach(function(a){
     })
 }) 
 
+// Testimony
+var slider = tns({
+    container: '#s_testimonies',
+    items: 1,
+    controls: false,
+    nav: false,
+    autoplayButtonOutput: false,
+    slideBy: 1,
+    mouseDrag: true,
+    swipeAngle: false,
+    autoplay: true,
+    responsive: {
+        '957': {
+            items: 3,
+        },
+        '767': {
+            items: 2
+        }
+    }
+});
