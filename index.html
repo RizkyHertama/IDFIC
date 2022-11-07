@@ -16,12 +16,13 @@
 
     <!-- Style css -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/component.css">
 
     <!-- Responsive 5 css -->
     <link rel="stylesheet" href="css/responsive.css">
 
-     <!--Font awesome link  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <!--Font awesome link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 
 </head>
 <body data-bs-spy="scroll" data-bs-target="#navbarText" data-bs-offset="0" class="navbar-nav" tabindex="0">
@@ -297,6 +298,33 @@
         </div>
     </section>
 
+    <section id="contact-us" class="d-flex justify-content-center">
+        <div class="card idfic">
+            <div class="card-body">
+                <h5 class="card-title">Contact Us</h5>
+                <form action="https://formspree.io/f/xrgdrgqk" method="post">
+                    <div class="mb-3">
+                        <label for="icuName" class="form-label">Full Name</label>
+                        <input type="text" class="form-control" id="icuName" name="name">
+                    </div>
+                    <div class="mb-3">
+                        <label for="icuEmail" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="icuEmail" name="email">
+                    </div>
+                    <div class="mb-3">
+                        <label for="icuSubject" class="form-label">Subject</label>
+                        <input type="text" class="form-control" id="icuSubject" name="subject" placeholder="Explain shortly in one breath">
+                    </div>
+                    <div class="mb-3">
+                        <label for="tacuMessage" class="form-label">Message</label>
+                        <textarea class="form-control" id="tacuMessage" rows="4" name="message" placeholder="Explain more your consideration, inspiration, hesitation, and else..."></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
     <!-- FOOTER START -->
    <footer>
         <div class="row">
@@ -340,6 +368,19 @@
     <!-- Main JS -->
     <script src="js/script.js"></script>
 
+    <!--Start of Tawk.to Script-->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/6368df30daff0e1306d61dd3/1gh8qfmd4';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
+    </script>
+    <!--End of Tawk.to Script-->
 
 </body>
 </html>

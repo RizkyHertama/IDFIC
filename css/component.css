@@ -1,0 +1,11 @@
+.card.idfic{
+    box-shadow: 0 3px 20px 0px rgb(0 0 0 / 12%);
+    border-radius: 1.5rem !important;
+    padding: 1.875rem 2.5rem 2.5rem;
+    border: none;
+    transition: all 0.5s ease;
+}
+
+.card.idfic:hover{
+    box-shadow: 0 2rem 5rem rgb(0 0 0 / 12%);
+}

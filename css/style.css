@@ -277,7 +277,7 @@
         text-align: right;
     }
     .home-image img{
-        animation: float 3s linear infinite;
+        animation: float 12s ease-in-out infinite;
     }
     @keyframes float{
         0%, 100%{
@@ -554,8 +554,19 @@
         border-bottom : 1px solid #ccc;
         margin : 20px auto;
       }
+
+      /* Contact Us */
+      #contact-us{
+        padding: 2rem 0rem 8.25rem 0rem;
+      }
+
+      #contact-us > .card{
+        margin: 0rem 1rem;
+        max-width: calc(100% - 2rem);
+        width: 32rem;
+      }
     
-    <!--==== resonsive classes======-->
+    /* ==== resonsive classes====== */
     @media (max-width:1030px){
         /*  ================================================
         :: 8.0 Features CSS
