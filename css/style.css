@@ -10,7 +10,7 @@
         /* Background Color */
         --bg-white:#fff;
         --bg-black:#2C2C2C;
-        /* --bg-light-blue:#ff007a; */
+        /* --bg-light-blue:#52C6FB; */
         --bg-light-blue:#52C6FB; 
         --bg-light-gray:#f6f9fe;
         --bg-gradient:linear-gradient(to top, #3C83CF  0%, #52C6FB 100%);
@@ -24,7 +24,7 @@
         --text-white:#fff;
         --text-black:#2C2C2C;
         --text-light-black:#444;
-        /* --text-light-blue:#ff007a; */
+        /* --text-light-blue:##ff007a; */
         --text-light-blue:#52C6FB;
         --text-light-gray:#7e8085;
     }
@@ -225,7 +225,7 @@
     #home{
         min-height: 900px;
         height: 100%;
-        background: rgba(0, 0, 0, 0) url(../images/Biru.png) no-repeat scroll left center;
+        background: rgba(0, 0, 0, 0) url(../images/Biru.webp) no-repeat scroll left center;
         background-size: cover;
         display:flex;
         align-items: center;
@@ -373,7 +373,7 @@
         text-align: left;
         margin-top: 0;
         padding-top: 100px;
-        background: url(../images/feature-biru.png) no-repeat center center;
+        background: url(../images/feature-biru.webp) no-repeat center center;
         background-size: cover;
         -webkit-background-size: cover;
     }
@@ -458,8 +458,8 @@
         width: 5rem;
         height: 4.875rem;
         margin: 2.5rem auto 3.125rem;
-        border-right: dashed 0.313rem #ff007a;
-        border-bottom: solid 0.313rem #ff007a;
+        border-right: dashed 0.313rem #52C6FB;
+        border-bottom: solid 0.313rem #52C6FB;
         border-radius: 100%;
         padding-left: 0.563rem;
         padding-top: 0.438rem;
@@ -554,6 +554,7 @@
         border-bottom : 1px solid #ccc;
         margin : 20px auto;
       }
+     
 
       /* Contact Us */
       #contact-us{
@@ -629,7 +630,7 @@
         } 
         .navbar .navbar-nav .nav-link:hover,
         .navbar .navbar-nav .nav-link.active{
-            color: #ff007a;
+            color: #52C6FB;
         } 
     
     
@@ -661,6 +662,11 @@
         ================================================ */
         .single_price {
             margin-bottom:2.5rem;
+        }
+
+        /* Footer  */
+         footer .col{
+            flex-basis:50%;
         }
     }
     @media (max-width:767px){
@@ -713,6 +719,11 @@
         }
         .feature_img img{
             max-width: 95%;
+        }
+
+        /* Footer  */
+        footer .col{
+            flex-basis:100%;
         }
          
     }
