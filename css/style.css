@@ -176,6 +176,10 @@
     .navbar-brand img{
         max-width:50%;
     } 
+
+    .nav-link.active{
+        color : white !important;
+    }
     
     /* On Scroll Fixed Navbar  */ 
     .navbar-sticky-on .navbar-nav .nav-link:hover,
